@@ -1,8 +1,12 @@
 import React, {useState} from 'react';
+import './PlaygroundObjects'; 
 
-const CardItem = () => {
+const CardItem = ({playgroundObjects}) => {
+    
     return (
-        <div>This is a Card Item</div>
+        <div>
+            This is a Card Item
+        </div>
     )   
 }
 
