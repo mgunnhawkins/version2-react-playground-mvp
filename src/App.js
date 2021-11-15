@@ -1,16 +1,23 @@
 import React from 'react';
-import CardList from './components/CardList';
+import AllCards from './components/AllCards';
+import PlaygroundObjects from './components/PlaygroundObjects';
 //import card List
 
-const App = () => {
+class App extends React.Component {
+    state={ playgroundObjects: [] };
    
     //render method
     //return
-}
-export default () => {
-    return (
-       <div>
-           <CardList />
-       </div>
-    )
+   
+    render () {
+        return (
+            <div>
+                <AllCards />
+            </div>
+         )
+    }
+    
 };
+
+
+export default App;

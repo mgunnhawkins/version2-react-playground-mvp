@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 import CardItem from './CardItem';
 
-const CardList = () => {
+const AllCards = () => {
     return (
         <div>
             <CardItem />
@@ -9,4 +9,4 @@ const CardList = () => {
     );
 }
 
-export default CardList;
+export default AllCards;
