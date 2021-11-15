@@ -15,13 +15,18 @@ class CardItem extends React.Component {
         return (
             <div>
                 <Card style={{ width: '18rem' }}>
-                    <Card.Img variant="top" src="holder.js/100px180" />
+                    <Card.Img variant="top" src={this.props.playground.playgroundImg} />
                     <Card.Body>
                     <Card.Title>{this.props.playground.name}</Card.Title>
-                    <Card.Text>
-                    This is Card Text
-                    </Card.Text>
-                    <Button variant="primary">Go somewhere</Button>
+                    <Card.Subtitle>
+                        {this.props.playground.location}
+                        <br />
+                        {this.props.playground.neighborhood}
+                    </Card.Subtitle>
+                        <br />
+                    <Card.Link href={this.props.playground.link}>Directions</Card.Link>
+                        <br /> 
+                    <Button variant="primary">Click here for more details</Button>
                     </Card.Body>
                 </Card>
         </div>
