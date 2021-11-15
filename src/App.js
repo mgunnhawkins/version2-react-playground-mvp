@@ -4,18 +4,13 @@ import PlaygroundObjects from './components/PlaygroundObjects';
 //import card List
 
 class App extends React.Component {
-    state={ playgroundObjects: [] };
-   
-    //render method
-    //return
-   
     render () {
         return (
             <div>
                 <AllCards />
             </div>
-         )
-    }
+         );
+    };
     
 };
 
