@@ -55,7 +55,7 @@ class AllCards extends React.Component {
     };
 
 
-    rener() {
+    render() {
         let cardItems = this.state.playgrounds.map(playground => {
             return (
                 <Col sm="4">
