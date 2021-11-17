@@ -51,11 +51,15 @@ class AllCards extends React.Component {
             ]
         }
     };
+
+    clickMoreDetails(id){
+        this.setState({ playgrounds: this.state.playground.id});
+    }
     render() {
         let cardItems = this.state.playgrounds.map(playground => {
             return (
                 <Col sm="4">
-                    <CardItem playground={playground}/>
+                    <CardItem key={playground.id} clickMoreDetails={this.clickMoreDetails.bind(this)} playground={playground}/>
                 </Col>
             );
         })
